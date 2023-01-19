@@ -88,3 +88,11 @@ p {
 .paragraph_list {
 font-family: "Times New Roman", Times, serif;
 }
+
+  ul {
+    list-style-type: none;
+  }
+  ul li::before {
+    content: url("data:image/svg+xml,<svg width='50' height='50'><circle cx='25' cy='25' r='22' fill='none' stroke='black'/><line x1='3' y1='25' x2='47' y2='25' stroke='black' stroke-width='4'><animateTransform attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='2s' repeatCount='indefinite'/></line></svg>");
+    margin-right: 10px;
+  }
